@@ -1,0 +1,589 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IRF8721PBF-1 Q?
+U 1 1 5E2C59F0
+P 3500 3900
+AR Path="/5E2C59F0" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C59F0" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3704 3946 50  0000 L CNN
+F 1 "IRF8721PBF-1" H 3704 3855 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3700 3800 50  0001 L CNN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf8721pbf-1.pdf" H 3500 3900 50  0001 L CNN
+	1    3500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR?
+U 1 1 5E2C59F6
+P 3600 2050
+AR Path="/5E2C59F6" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C59F6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3600 1900 50  0001 C CNN
+F 1 "+10V" H 3615 2223 50  0000 C CNN
+F 2 "" H 3600 2050 50  0001 C CNN
+F 3 "" H 3600 2050 50  0001 C CNN
+	1    3600 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2050 3600 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C59FD
+P 3600 4500
+AR Path="/5E2C59FD" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C59FD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3600 4250 50  0001 C CNN
+F 1 "GND" H 3605 4327 50  0000 C CNN
+F 2 "" H 3600 4500 50  0001 C CNN
+F 3 "" H 3600 4500 50  0001 C CNN
+	1    3600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4100 3600 4500
+$Comp
+L Device:R R?
+U 1 1 5E2C5A04
+P 3050 2500
+AR Path="/5E2C5A04" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A04" Ref="R?"  Part="1" 
+F 0 "R?" V 2843 2500 50  0000 C CNN
+F 1 "100" V 2934 2500 50  0000 C CNN
+F 2 "" V 2980 2500 50  0001 C CNN
+F 3 "~" H 3050 2500 50  0001 C CNN
+	1    3050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:DTC123J Q?
+U 1 1 5E2C5A0A
+P 2550 2850
+AR Path="/5E2C5A0A" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A0A" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2738 2896 50  0000 L CNN
+F 1 "DTC123J" H 2738 2805 50  0000 L CNN
+F 2 "" H 2550 2850 50  0001 L CNN
+F 3 "" H 2550 2850 50  0001 L CNN
+	1    2550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C5A10
+P 2650 3100
+AR Path="/5E2C5A10" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A10" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 2850 50  0001 C CNN
+F 1 "GND" H 2655 2927 50  0000 C CNN
+F 2 "" H 2650 3100 50  0001 C CNN
+F 3 "" H 2650 3100 50  0001 C CNN
+	1    2650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3050 2650 3100
+Wire Wire Line
+	2650 2650 2650 2500
+$Comp
+L Device:R R?
+U 1 1 5E2C5A18
+P 3050 2100
+AR Path="/5E2C5A18" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A18" Ref="R?"  Part="1" 
+F 0 "R?" V 2843 2100 50  0000 C CNN
+F 1 "270" V 2934 2100 50  0000 C CNN
+F 2 "" V 2980 2100 50  0001 C CNN
+F 3 "~" H 3050 2100 50  0001 C CNN
+	1    3050 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2100 2650 2100
+Wire Wire Line
+	2650 2100 2650 2500
+Connection ~ 2650 2500
+Wire Wire Line
+	3200 2100 3600 2100
+Connection ~ 3600 2100
+Wire Wire Line
+	3600 2100 3600 2300
+$Comp
+L Transistor_FET:FDS9435A Q?
+U 1 1 5E2C5A24
+P 3500 2500
+AR Path="/5E2C5A24" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A24" Ref="Q?"  Part="1" 
+F 0 "Q?" H 3704 2454 50  0000 L CNN
+F 1 "FDS9435A" H 3704 2545 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3700 2425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/FDS9435A-D.PDF" V 3500 2500 50  0001 L CNN
+	1    3500 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2C5A2A
+P 3000 3900
+AR Path="/5E2C5A2A" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A2A" Ref="R?"  Part="1" 
+F 0 "R?" V 2793 3900 50  0000 C CNN
+F 1 "100" V 2884 3900 50  0000 C CNN
+F 2 "" V 2930 3900 50  0001 C CNN
+F 3 "~" H 3000 3900 50  0001 C CNN
+	1    3000 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2C5A30
+P 2800 4200
+AR Path="/5E2C5A30" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A30" Ref="R?"  Part="1" 
+F 0 "R?" V 2593 4200 50  0000 C CNN
+F 1 "33k" V 2684 4200 50  0000 C CNN
+F 2 "" V 2730 4200 50  0001 C CNN
+F 3 "~" H 2800 4200 50  0001 C CNN
+	1    2800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3900 3300 3900
+Wire Wire Line
+	2850 3900 2800 3900
+Wire Wire Line
+	2800 3900 2800 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C5A39
+P 2800 4500
+AR Path="/5E2C5A39" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C5A39" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2800 4250 50  0001 C CNN
+F 1 "GND" H 2805 4327 50  0000 C CNN
+F 2 "" H 2800 4500 50  0001 C CNN
+F 3 "" H 2800 4500 50  0001 C CNN
+	1    2800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4500 2800 4350
+Wire Wire Line
+	2650 2500 2900 2500
+Wire Wire Line
+	3200 2500 3300 2500
+Wire Wire Line
+	3600 2700 3600 3150
+Wire Wire Line
+	1750 3900 2800 3900
+Connection ~ 2800 3900
+Wire Wire Line
+	1750 2850 2300 2850
+Wire Wire Line
+	3600 3150 3900 3150
+Connection ~ 3600 3150
+Wire Wire Line
+	3600 3150 3600 3700
+$Comp
+L Transistor_FET:IRF8721PBF-1 Q?
+U 1 1 5E2C6B34
+P 6650 3900
+AR Path="/5E2C6B34" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B34" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6854 3946 50  0000 L CNN
+F 1 "IRF8721PBF-1" H 6854 3855 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 3800 50  0001 L CNN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf8721pbf-1.pdf" H 6650 3900 50  0001 L CNN
+	1    6650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR?
+U 1 1 5E2C6B3A
+P 6750 2050
+AR Path="/5E2C6B3A" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B3A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 1900 50  0001 C CNN
+F 1 "+10V" H 6765 2223 50  0000 C CNN
+F 2 "" H 6750 2050 50  0001 C CNN
+F 3 "" H 6750 2050 50  0001 C CNN
+	1    6750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2050 6750 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C6B41
+P 6750 4500
+AR Path="/5E2C6B41" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B41" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 4250 50  0001 C CNN
+F 1 "GND" H 6755 4327 50  0000 C CNN
+F 2 "" H 6750 4500 50  0001 C CNN
+F 3 "" H 6750 4500 50  0001 C CNN
+	1    6750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4100 6750 4500
+$Comp
+L Device:R R?
+U 1 1 5E2C6B48
+P 6200 2500
+AR Path="/5E2C6B48" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B48" Ref="R?"  Part="1" 
+F 0 "R?" V 5993 2500 50  0000 C CNN
+F 1 "100" V 6084 2500 50  0000 C CNN
+F 2 "" V 6130 2500 50  0001 C CNN
+F 3 "~" H 6200 2500 50  0001 C CNN
+	1    6200 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:DTC123J Q?
+U 1 1 5E2C6B4E
+P 5700 2850
+AR Path="/5E2C6B4E" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B4E" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5888 2896 50  0000 L CNN
+F 1 "DTC123J" H 5888 2805 50  0000 L CNN
+F 2 "" H 5700 2850 50  0001 L CNN
+F 3 "" H 5700 2850 50  0001 L CNN
+	1    5700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C6B54
+P 5800 3100
+AR Path="/5E2C6B54" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B54" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5800 2850 50  0001 C CNN
+F 1 "GND" H 5805 2927 50  0000 C CNN
+F 2 "" H 5800 3100 50  0001 C CNN
+F 3 "" H 5800 3100 50  0001 C CNN
+	1    5800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3050 5800 3100
+Wire Wire Line
+	5800 2650 5800 2500
+$Comp
+L Device:R R?
+U 1 1 5E2C6B5C
+P 6200 2100
+AR Path="/5E2C6B5C" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B5C" Ref="R?"  Part="1" 
+F 0 "R?" V 5993 2100 50  0000 C CNN
+F 1 "270" V 6084 2100 50  0000 C CNN
+F 2 "" V 6130 2100 50  0001 C CNN
+F 3 "~" H 6200 2100 50  0001 C CNN
+	1    6200 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2100 5800 2100
+Wire Wire Line
+	5800 2100 5800 2500
+Connection ~ 5800 2500
+Wire Wire Line
+	6350 2100 6750 2100
+Connection ~ 6750 2100
+Wire Wire Line
+	6750 2100 6750 2300
+$Comp
+L Transistor_FET:FDS9435A Q?
+U 1 1 5E2C6B68
+P 6650 2500
+AR Path="/5E2C6B68" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B68" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6854 2454 50  0000 L CNN
+F 1 "FDS9435A" H 6854 2545 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 2425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/FDS9435A-D.PDF" V 6650 2500 50  0001 L CNN
+	1    6650 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2C6B6E
+P 6150 3900
+AR Path="/5E2C6B6E" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B6E" Ref="R?"  Part="1" 
+F 0 "R?" V 5943 3900 50  0000 C CNN
+F 1 "100" V 6034 3900 50  0000 C CNN
+F 2 "" V 6080 3900 50  0001 C CNN
+F 3 "~" H 6150 3900 50  0001 C CNN
+	1    6150 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2C6B74
+P 5950 4200
+AR Path="/5E2C6B74" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B74" Ref="R?"  Part="1" 
+F 0 "R?" V 5743 4200 50  0000 C CNN
+F 1 "33k" V 5834 4200 50  0000 C CNN
+F 2 "" V 5880 4200 50  0001 C CNN
+F 3 "~" H 5950 4200 50  0001 C CNN
+	1    5950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3900 6450 3900
+Wire Wire Line
+	6000 3900 5950 3900
+Wire Wire Line
+	5950 3900 5950 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C6B7D
+P 5950 4500
+AR Path="/5E2C6B7D" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C6B7D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5950 4250 50  0001 C CNN
+F 1 "GND" H 5955 4327 50  0000 C CNN
+F 2 "" H 5950 4500 50  0001 C CNN
+F 3 "" H 5950 4500 50  0001 C CNN
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4500 5950 4350
+Wire Wire Line
+	5800 2500 6050 2500
+Wire Wire Line
+	6350 2500 6450 2500
+Wire Wire Line
+	6750 2700 6750 3150
+Wire Wire Line
+	4900 3900 5950 3900
+Connection ~ 5950 3900
+Wire Wire Line
+	4900 2850 5450 2850
+Wire Wire Line
+	6750 3150 7050 3150
+Connection ~ 6750 3150
+Wire Wire Line
+	6750 3150 6750 3700
+$Comp
+L Transistor_FET:IRF8721PBF-1 Q?
+U 1 1 5E2C8D1A
+P 10000 3850
+AR Path="/5E2C8D1A" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D1A" Ref="Q?"  Part="1" 
+F 0 "Q?" H 10204 3896 50  0000 L CNN
+F 1 "IRF8721PBF-1" H 10204 3805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10200 3750 50  0001 L CNN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf8721pbf-1.pdf" H 10000 3850 50  0001 L CNN
+	1    10000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR?
+U 1 1 5E2C8D20
+P 10100 2000
+AR Path="/5E2C8D20" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D20" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10100 1850 50  0001 C CNN
+F 1 "+10V" H 10115 2173 50  0000 C CNN
+F 2 "" H 10100 2000 50  0001 C CNN
+F 3 "" H 10100 2000 50  0001 C CNN
+	1    10100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2000 10100 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C8D27
+P 10100 4450
+AR Path="/5E2C8D27" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D27" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10100 4200 50  0001 C CNN
+F 1 "GND" H 10105 4277 50  0000 C CNN
+F 2 "" H 10100 4450 50  0001 C CNN
+F 3 "" H 10100 4450 50  0001 C CNN
+	1    10100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4050 10100 4450
+$Comp
+L Device:R R?
+U 1 1 5E2C8D2E
+P 9550 2450
+AR Path="/5E2C8D2E" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D2E" Ref="R?"  Part="1" 
+F 0 "R?" V 9343 2450 50  0000 C CNN
+F 1 "100" V 9434 2450 50  0000 C CNN
+F 2 "" V 9480 2450 50  0001 C CNN
+F 3 "~" H 9550 2450 50  0001 C CNN
+	1    9550 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:DTC123J Q?
+U 1 1 5E2C8D34
+P 9050 2800
+AR Path="/5E2C8D34" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D34" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9238 2846 50  0000 L CNN
+F 1 "DTC123J" H 9238 2755 50  0000 L CNN
+F 2 "" H 9050 2800 50  0001 L CNN
+F 3 "" H 9050 2800 50  0001 L CNN
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C8D3A
+P 9150 3050
+AR Path="/5E2C8D3A" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D3A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9150 2800 50  0001 C CNN
+F 1 "GND" H 9155 2877 50  0000 C CNN
+F 2 "" H 9150 3050 50  0001 C CNN
+F 3 "" H 9150 3050 50  0001 C CNN
+	1    9150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3000 9150 3050
+Wire Wire Line
+	9150 2600 9150 2450
+$Comp
+L Device:R R?
+U 1 1 5E2C8D42
+P 9550 2050
+AR Path="/5E2C8D42" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D42" Ref="R?"  Part="1" 
+F 0 "R?" V 9343 2050 50  0000 C CNN
+F 1 "270" V 9434 2050 50  0000 C CNN
+F 2 "" V 9480 2050 50  0001 C CNN
+F 3 "~" H 9550 2050 50  0001 C CNN
+	1    9550 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 2050 9150 2050
+Wire Wire Line
+	9150 2050 9150 2450
+Connection ~ 9150 2450
+Wire Wire Line
+	9700 2050 10100 2050
+Connection ~ 10100 2050
+Wire Wire Line
+	10100 2050 10100 2250
+$Comp
+L Transistor_FET:FDS9435A Q?
+U 1 1 5E2C8D4E
+P 10000 2450
+AR Path="/5E2C8D4E" Ref="Q?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D4E" Ref="Q?"  Part="1" 
+F 0 "Q?" H 10204 2404 50  0000 L CNN
+F 1 "FDS9435A" H 10204 2495 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10200 2375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/FDS9435A-D.PDF" V 10000 2450 50  0001 L CNN
+	1    10000 2450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2C8D54
+P 9500 3850
+AR Path="/5E2C8D54" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D54" Ref="R?"  Part="1" 
+F 0 "R?" V 9293 3850 50  0000 C CNN
+F 1 "100" V 9384 3850 50  0000 C CNN
+F 2 "" V 9430 3850 50  0001 C CNN
+F 3 "~" H 9500 3850 50  0001 C CNN
+	1    9500 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2C8D5A
+P 9300 4150
+AR Path="/5E2C8D5A" Ref="R?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D5A" Ref="R?"  Part="1" 
+F 0 "R?" V 9093 4150 50  0000 C CNN
+F 1 "33k" V 9184 4150 50  0000 C CNN
+F 2 "" V 9230 4150 50  0001 C CNN
+F 3 "~" H 9300 4150 50  0001 C CNN
+	1    9300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3850 9800 3850
+Wire Wire Line
+	9350 3850 9300 3850
+Wire Wire Line
+	9300 3850 9300 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5E2C8D63
+P 9300 4450
+AR Path="/5E2C8D63" Ref="#PWR?"  Part="1" 
+AR Path="/5E2C13AE/5E2C8D63" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9300 4200 50  0001 C CNN
+F 1 "GND" H 9305 4277 50  0000 C CNN
+F 2 "" H 9300 4450 50  0001 C CNN
+F 3 "" H 9300 4450 50  0001 C CNN
+	1    9300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4450 9300 4300
+Wire Wire Line
+	9150 2450 9400 2450
+Wire Wire Line
+	9700 2450 9800 2450
+Wire Wire Line
+	10100 2650 10100 3100
+Wire Wire Line
+	8250 2800 8800 2800
+Wire Wire Line
+	10100 3100 10400 3100
+Connection ~ 10100 3100
+Wire Wire Line
+	10100 3100 10100 3650
+Text HLabel 1750 2850 0    50   Input ~ 0
+MOS_HS_A
+Text HLabel 1750 3900 0    50   Input ~ 0
+MOS_LS_A
+Text HLabel 4900 2850 0    50   Input ~ 0
+MOS_HS_B
+Text HLabel 4900 3900 0    50   Input ~ 0
+MOS_LS_B
+Text HLabel 8250 2800 0    50   Input ~ 0
+MOS_HS_C
+Connection ~ 9300 3850
+Wire Wire Line
+	8250 3850 9300 3850
+Text HLabel 8250 3850 0    50   Input ~ 0
+MOS_LS_C
+Text HLabel 3900 3150 2    50   Output ~ 0
+PHASE_A
+Text HLabel 7050 3150 2    50   Output ~ 0
+PHASE_B
+Text HLabel 10400 3100 2    50   Output ~ 0
+PHASE_C
+$EndSCHEMATC
